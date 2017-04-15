@@ -1,1 +1,1 @@
-# React-Skeleton
+# Boilerplate for React/Redux prototyping.
