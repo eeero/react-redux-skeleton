@@ -1,6 +1,6 @@
 {
   "name": "react-redux-skeleton",
-  "version": "0.0.1",
+  "version": "1.12.3",
   "scripts": {
     "start:dev": "NODE_ENV=development && webpack-dev-server",
     "start": "NODE_ENV=production node server.js",
