@@ -11,6 +11,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
+  mode: 'development',
   /* Specifies the entry file where the bundler starts the bundling process. */
   entry: './src/index.js',
   /* Specifies the location where the bundled Javascript code is to be saved. */
@@ -20,8 +21,8 @@ module.exports = {
     filename: 'index_bundle.js'
   },
   module: {
-    /* Loaders are transformations that are applied on a file in our app. */
-    loaders: [
+    /* Rules are transformations that are applied on a file in our app. */
+    rules: [
       /* babel-loader goes through and transpiles every file that ends with a .js or .jsx extension excluding the files inside the node_modules folder.  */
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
